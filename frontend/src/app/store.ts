@@ -1,7 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
+import {messageReducer} from "../store/messageState.tsx";
 
 export const store = configureStore({
   reducer: {
+    message: messageReducer
   }
 });
 
